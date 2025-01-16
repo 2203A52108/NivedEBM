@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, #161578, #b81055);
+    animation: gradientBackground 6s infinite alternate;
+}
+
+@keyframes gradientBackground {
+    0% { background: linear-gradient(90deg, #161578, #b81055); }
+    100% { background: linear-gradient(90deg, #b81055, #161578); }
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 400% 400%;
+}
+
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.headings-container {
+    padding: 0 1rem;
+}
+
+.interaction-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.text-control {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    background-color: #3f464a52;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    resize: none;
+}
+
+.text-control:focus-visible {
+    outline: none;
+    border-color: #f57d4e;
+}
+
+.voice-control {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    background-color: #3f464a52;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.error-para {
+    color: red;
+    font-size: 0.9rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background-image: linear-gradient(90deg, #F4244C, #F57D4E);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(90deg, #F57D4E, #F4244C);
+}
+
+.clear-btn {
+    background-image: linear-gradient(90deg, #1e3c72, #2a5298);
+}
+
+.clear-btn:hover {
+    background-image: linear-gradient(90deg, #2a5298, #1e3c72);
+}
